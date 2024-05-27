@@ -1,38 +1,121 @@
 
+header {
+    background-color: #000;
+    text-align: end;
+}
+
+.headerbutton {
+    background-color: black; /* Color de fondo del botón */
+    color: white;          /* Color del texto */
+    border: none;          /* Sin borde */
+    padding: 10px 20px;    /* Espaciado interno */
+    font-size: 16px;       /* Tamaño del texto */
+    cursor: pointer;       /* Cursor en forma de mano */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.headerbutton:active {
+    background-color: rgb(255, 0, 0); /* Color de fondo al hacer clic */
+    color: white;              /* Color del texto al hacer clic */
+}
+
 span {
     color: rgb(255, 0, 0);
 
 }
 
 h1, h2, p {
-    color: blueviolet;
+    color: white;
+}
+
+.start {
+    text-align: start;
 }
 
 .hello {
-    color: #000;
-    text-align: center;
+    background-color: #000;
+    text-align: start;
     padding: 20px 50px;
+}
+
+.hellob {
+    background-color: red; /* Color de fondo del botón */
+    color: white;          /* Color del texto */
+    border: none;          /* Sin borde */
+    padding: 10px 20px;    /* Espaciado interno */
+    font-size: 16px;       /* Tamaño del texto */
+    cursor: pointer;       /* Cursor en forma de mano */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.hellob:active {
+    background-color: white; /* Color de fondo al hacer clic */
+    color: red;              /* Color del texto al hacer clic */
 }
 
 .acercademi {
-    color: rgb(255, 0, 0);
-    text-align: center;
+    background-color: rgb(255, 0, 0);
+    text-align: end;
     padding: 20px 50px;
 }
 
+
 .experiencia {
-    color: white;
+    background-color: white;
     text-align: center;
     padding: 10px 50px;
+}
+
+.progress-container {
+    width: 20%;            /* Ancho de la barra completa */
+    background-color: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 25px;    /* Bordes redondeados */
+    margin: 20px 0;        /* Espaciado vertical */
+}
+
+.progress-bar {
+    height: 7px;          /* Altura de la barra de progreso */
+    width: 0;              /* Ancho inicial de la barra de progreso (0%) */
+    background-color: rgb(255, 0, 0); /* Color de la barra de progreso */
+    border-radius: 25px;   /* Bordes redondeados */
+    text-align: center;    /* Alineación del texto */
+    line-height: 0px;     /* Altura de línea para centrar el texto verticalmente */
+    color: white;          /* Color del texto */
+    position: relative; /* Añadido para posicionar el porcentaje */
+    /* Transición suave del ancho   transition: width 0.4s ease;  */
+}
+
+.progress-bar[data-label]:after {
+    content: attr(data-label); /* Mostrar el porcentaje dentro de la barra */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 3px;
+    text-align: center;
+    line-height: 0px;
+    font-size: 6px;
+}
+
+.textorojo {
+    color: rgb(255, 0, 0);
+}
+
+.textonegro {
+    color: #000;
 }
 
 .calificacion {
-    color: black;
+    background-color: black;
     text-align: center;
     padding: 10px 50px;
 }
 
+.portfolio {
+    background-color: white;
+
+}
+
 footer {
-    color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
     
 }
