@@ -1,7 +1,17 @@
+* {
+    /*
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 header {
     background-color: #000;
     text-align: end;
+    align-items: center;
 }
 
 .headerbutton {
@@ -26,6 +36,7 @@ span {
 
 h1, h2, p {
     color: white;
+    background-color: ;
 }
 
 .start {
@@ -66,12 +77,22 @@ h1, h2, p {
     padding: 10px 50px;
 }
 
+.barras{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    gap: 20px; /* Espacio entre las barras de progreso */
+    justify-content: center; /* Centrar las columnas */
+    margin-top: 50px; /* Espacio superior */
+}
+
 .progress-container {
-    width: 20%;            /* Ancho de la barra completa */
+    width: 50%;            /* Ancho de la barra completa */
     background-color: #e0e0e0; /* Color de fondo de la barra */
     border-radius: 25px;    /* Bordes redondeados */
-    margin: 20px 0;        /* Espaciado vertical */
+    margin: 20px 0;
+    padding: 0px 0px 0px 0px;        /* Espaciado vertical */
 }
+
 
 .progress-bar {
     height: 7px;          /* Altura de la barra de progreso */
