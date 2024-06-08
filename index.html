@@ -3,55 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stileto.css">
     <title>Mi Página</title>
 </head>
 <body>
     <header>
-        <img src="" alt="logo">
+        <img src="https://via.placeholder.com/5" alt="logo">
         <nav>
-            <a class="headerbutton" href="">home</a>
-            <a class="headerbutton" href="">about us</a>
-            <a class="headerbutton" href="">resume</a>
-            <a class="headerbutton" href="">skills</a>
-            <a class="headerbutton" href="">portfolio</a>
-            <a class="headerbutton" href="">contact us</a>
-            <a class="headerbutton" href="">sign up</a>
+            <a class="headerbutton" href="#hero">home</a>
+            <a class="headerbutton" href="#servicios">servicios</a>
+            <a class="headerbutton" href="#skills">habilidades</a>
+            <a class="headerbutton" href="#projects">proyectos</a>
+            <a class="headerbutton" href="#contacto">contacto</a>
+            <!-- <a class="headerbutton" href="">sign up</a> -->
         </nav>
     </header>
 
     <main>
-        <section class="hero">   
-            <section class="izq">
-                <h1><span>HOLA, YO SOY</span><br> GONZALO MUNAFO</h1>
-                <h2>Desarrollador <span></span>FULLSTACK</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab nulla doloremque laborum quia, eaque quis exercitationem, sit omnis laudantium ut quasi corrupti aliquam illo dicta dolores mollitia nam alias!</p>
-                <button class="hellob">download cd</button>
-                <button class="hellob">order now</button>
+        <section id="hero">
+            <section class="contenedor hero1">
+                <section class="presentacion">
+                    <h1><span>HOLA, YO SOY</span><br> GONZALO MUNAFO</h1>
+                    <h2>Desarrollador <span></span>FULLSTACK</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab nulla doloremque laborum quia, eaque quis exercitationem, sit omnis laudantium ut quasi corrupti aliquam illo dicta dolores mollitia nam alias!</p>
+                    <button class="herob">download cd</button>
+                    <button class="herob">order now</button>
+                </section>
+    
+                <section class="mifoto">
+                    <img src="https://via.placeholder.com/250x350" alt="Gonzalo Munafo">
+                </section>
+
             </section>
 
-            <section class="der"><img src=""https://via.placeholder.com/50" alt="Gonzalo Munafo"></section>
             <section class="banner">
                 <!-- foto izq, 2 renglones texto der -->
                 <section class="item-banner">
-                    <div class="izq"><img src="https://via.placeholder.com/5" alt="Gonzalo Munafo"></div>
-                    <div class="der">
-                        <h4 class="textorojo">3 year job</h4>
-                        <h5>experiencia</h5>
+                    <div class="icon"><i class="bi bi-award"></i></div>
+                    <div>
+                        <h4 class="bannerlet"><span>3 year job</span></h4>
+                        <h5 class="bannerlet">experiencia</h5>
                     </div>
                 </section>
                 <section class="item-banner">
-                    <div class="izq"><img src="https://via.placeholder.com/5" alt="Gonzalo Munafo"></div>
-                    <div class="der">
-                        <h4 class="textorojo">3 year job</h4>
-                        <h5>experiencia</h5>
+                    <div class="icon"><i class="bi bi-rocket-takeoff"></i></div>
+                    <div>
+                        <h4 class="bannerlet"><span>3 year job</span></h4>
+                        <h5 class="bannerlet">experiencia</h5>
                     </div>
                 </section>
                 <section class="item-banner">
-                    <div class="izq"><img src="https://via.placeholder.com/5" alt="Gonzalo Munafo"></div>
-                    <div class="der">
-                        <h4 class="textorojo">3 year job</h4>
-                        <h5>experiencia</h5>
+                    <div class="icon"><i class="bi bi-headset"></i></div>
+                    <div>
+                        <h4 class="bannerlet"><span>3 year job</span></h4>
+                        <h5 class="bannerlet">experiencia</h5>
                     </div>
                 </section>
                 
@@ -59,27 +65,27 @@
 
         </section>
 
-        <section class="acercademi servicios">
-            <section class="izq"><img src="https://via.placeholder.com/250" alt="Gonzalo Munafo"></section>
+        <section id="servicios">
+            <section class="izq"><img src="https://via.placeholder.com/350" alt="Gonzalo Munafo"></section>
               
             <section class="der"> 
                 <h2>MI INTRO</h2>
                 <h1>Acerca de mi</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, veniam blanditiis. Hic saepe, nemo deserunt neque quasi aliquam reprehenderit expedita earum, voluptatem optio delectus fuga. Quia debitis sed accusantium a!</p>\
+                <p class="pespacio">Lor em ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, veniam blanditiis. Hic saepe</p>
                 <i class="fi fi-rr-user"></i>
-                <div><img src="https://via.placeholder.com/5" alt="logo usuario">Gonzalo Munafo</div>
-                <div><img src="https://via.placeholder.com/5" alt="logo telefono">351456686967</div>
-                <div><img src="https://via.placeholder.com/5" alt="logo mail">gonzalomunafo2002@gmail.com</div>
+                <div class="datos_personales"><i class="bi bi-person-fill"></i><p>Gonzalo Munafo</p></div>
+                <div class="datos_personales"><i class="bi bi-telephone-fill"></i><p>351456686967</p></div>
+                <div class="datos_personales"><i class="bi bi-envelope-fill"></i><p>gonzalomunafo2002@gmail.com</p></div>
             </section>
         </section>
 
-        <section class="skills">   
-            <h2 class="textorojo">Por qué elegirme</h2>
-            <h1 class="textonegro">MI EXPERIENCIA</h1>
+        <section id="skills">   
+            <span><h2>POR QUÉ ELEGIRME</h2></span>
+            <h1>MI EXPERIENCIA</h1>
 <!-- aca empieza la nueva idea barra -->
-             <section class="contenedor">
+             <section class="cb">
                 <div class="barra">
-                    <p class="textorojo">facebook marketing</p>
+                    <p>facebook marketing</p>
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 20%;" data-label="20%"></div>
                     </div>
@@ -91,21 +97,22 @@
                     </div>
                 </div>
              </section>
-             <section class="contenedor">
+             <section class="cb">
                 <div class="barra">
                     <p class="textorojo">facebook marketing</p>
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 20%;" data-label="20%"></div>
                     </div>
                 </div>
+                
                 <div class="barra">
-                    <p class="textorojo">facebook marketing</p>
+                    <p class=""></p> <!-- creo q no necesotan  class --> facebook marketing</p>
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 20%;" data-label="20%"></div>
                     </div>
                 </div>
              </section>
-             <section class="contenedor">
+             <section class="cb">
                 <div class="barra">
                     <p class="textorojo">facebook marketing</p>
                     <div class="progress-container">
@@ -147,60 +154,7 @@
 
         </section>
                                                  -->
-
-        <section class="projects">
-            <h1 class="textorojo">PORTAFOLIO</h1>
-            <h2 class="textonegro">Mi trabajo reciente</h2>
-            <section class="contenedor">
-                <div class="contenedor">
-                    <div>
-                        <img src="https://via.placeholder.com/150" alt="">
-
-                    </div>
-                    <div>
-                        <h4>wordpress developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laudantium dolorum delectus, possimus tempore quidem explicabo quod est repudiandae alias, velit quaerat. Neque, commodi a consequatur fugiat voluptatem est officiis?</p>
-                    </div>
-                </div>
-
-                <div class="contenedor">
-                    <div>
-                        <img src="https://via.placeholder.com/150" alt="">
-
-                    </div>
-                    <div>
-                        <h4>wordpress developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laudantium dolorum delectus, possimus tempore quidem explicabo quod est repudiandae alias, velit quaerat. Neque, commodi a consequatur fugiat voluptatem est officiis?</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contenedor">
-                <div class="contenedor">
-                    <div>
-                        <img src="https://via.placeholder.com/150" alt="">
-
-                    </div>
-                    <div>
-                        <h4>wordpress developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laudantium dolorum delectus, possimus tempore quidem explicabo quod est repudiandae alias, velit quaerat. Neque, commodi a consequatur fugiat voluptatem est officiis?</p>
-                    </div>
-                </div>
-                
-                <div class="contenedor">
-                    <div>
-                        <img src="https://via.placeholder.com/150" alt="">
-
-                    </div>
-                    <div>
-                        <h4>wordpress developer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laudantium dolorum delectus, possimus tempore quidem explicabo quod est repudiandae alias, velit quaerat. Neque, commodi a consequatur fugiat voluptatem est officiis?</p>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section class="contacto">
+        <section id="contacto">
             <form action="#" method="post">
                 <h2>Contacto</h2>
                 <label for="name">Nombre</label>
@@ -213,7 +167,64 @@
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
                 <button type="submit">Enviar</button>
-            </form>  
+            </form> 
+        </section>                                                    
+
+
+
+        <section id="projects">
+            <h1><span>PORTAFOLIO</span></h1>
+            <h2 class="textonegro">MIS TRABAJOS MÁS RECIENTES</h2>
+            <section class="contenedor contproj">
+                <div class="contenedor recientes">
+                    <div>
+                        <img src=img/Project-pc.jpeg alt="">
+
+                    </div>
+                    <div>
+                        <h4><span>wordpress developer</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="contenedor recientes">
+                    <div>
+                        <img src="img/ux_design.png" alt="">
+
+                    </div>
+                    <div>
+                        <h4><span>wordpress developer</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laudantium dolorum delectus</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contenedor contproj">
+                <div class="contenedor recientes">
+                    <div>
+                        <img src="img/Project-libro.jpg" alt="">
+
+                    </div>
+                    <div>
+                        <h4><span>wordpress developer</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, laudantium dolorum delectus, possimus tempore quidem explicabo</p>
+                    </div>
+                </div>
+                
+                <div class="contenedor recientes">
+                    <div>
+                        <img src="img/designweb.jpg" alt="">
+
+                    </div>
+                    <div>
+                        <h4><span>wordpress developer</span></h4>
+                        <p>Possimus tempore quidem explicabo quod est repudiandae alias, velit quaerat. Neque, commodi a consequatur fugiat voluptatem est officiis?</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+         
             <!--revisar porq era el calificaion nqv 
             <h2>mi calificacion</h2>
             <h1>INCREIBLE VIAJE</h1>
@@ -232,7 +243,7 @@
             </section>
             -->
             
-        </section>
+        
 
         <!--  
         <section class="portfolio">   

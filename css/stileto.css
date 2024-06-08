@@ -1,0 +1,306 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: ;
+}
+
+header {
+    background-color: #000;
+    text-align: end;
+    align-items: center;
+}
+
+.headerbutton {
+    background-color: black; /* Color de fondo del botón */
+    text-decoration: none;
+    color: white;          /* Color del texto */
+    border: none;          /* Sin borde */
+    border-radius: 5%;
+    padding: 10px 20px;    /* Espaciado interno */
+    font-size: 16px;       /* Tamaño del texto */
+    cursor: pointer;       /* Cursor en forma de mano */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.headerbutton:hover {
+    background-color: rgb(255, 0, 0); /* Color de fondo al hacer clic */
+    color: white;              /* Color del texto al hacer clic */
+}   
+
+span {
+    color: rgb(255, 0, 0);
+}
+
+
+.start {
+    text-align: start;
+}
+
+#hero {
+    background-color: #000;
+    color: white;
+    text-align: start;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+
+.presentacion {
+    width: 30%;
+    position: relative;
+    left: 15vh;
+
+}
+
+.herob {
+    background-color: red; /* Color de fondo del botón */
+    color: white;          /* Color del texto */
+    border: none;          /* Sin borde */
+    border-radius: 5%;
+    padding: 10px 20px;    /* Espaciado interno */
+    font-size: 16px;       /* Tamaño del texto */
+    cursor: pointer;       /* Cursor en forma de mano */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.herob:hover {
+    background-color: white; /* Color de fondo al hacer clic */
+    color: red;              /* Color del texto al hacer clic */
+}
+
+
+/*  
+.textorojo {
+    color: rgb(255, 0, 0);
+}
+
+.textonegro, h5 {
+    color: #000;
+}
+*/
+
+.izq {
+    /* position: relative;
+    left: 10%; 
+    margin: 5px; */
+}
+
+.mifoto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 20vh;
+    top: 8vh;
+} 
+
+.der {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 30px;
+    line-height: 1.2;
+
+}
+
+.der h1, h2, p{
+    margin: 5px;
+
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.banner{
+
+    width: 60%;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 250px;
+    position: relative;
+    top: 8vh;
+}
+
+.item-banner{
+    display: flex;
+    flex-direction: row;
+}
+
+.bi-award {
+    display: ;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.icon{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+.bannerlet{
+    margin: 2px;
+    color: #000
+}
+
+.bi-rocket-takeoff {
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+/* creo que los icons estando en blanco con el div que contenga el background color y le radius ya funciona */
+
+#servicios {
+    display: flex;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    text-align: start;
+    padding: 50px 150px;
+}
+
+.pespacio{
+    margin: 5px 5px 30px 5px;
+}
+
+.datos_personales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#skills {
+    background-color: white;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills h2 {
+    font-size: 1rem;
+    margin: 30px;
+}
+
+#skills h1 {
+    position: relative;
+    bottom: 30px;
+}
+
+
+.progress-container {
+    width: 75%;            /* Ancho de la barra completa */
+    background-color: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 25px;    /* Bordes redondeados */
+    margin: 20px 0;
+    padding: 0px 0px 0px 0px;        /* Espaciado vertical */
+    position: relative;
+    bottom: 20%;
+}
+
+
+.progress-bar {
+    height: 11px;          /* Altura de la barra de progreso */
+    width: 0;              /* Ancho inicial de la barra de progreso (0%) */
+    background-color: rgb(255, 0, 0); /* Color de la barra de progreso */
+    border-radius: 25px;   /* Bordes redondeados */
+    text-align: center;    /* Alineación del texto */
+    line-height: 0px;     /* Altura de línea para centrar el texto verticalmente */
+    color: white;          /* Color del texto */
+    position: relative; /* Añadido para posicionar el porcentaje */
+    /* Transición suave del ancho   transition: width 0.4s ease;  */
+}
+
+.progress-bar[data-label]:after {
+    content: attr(data-label); /* Mostrar el porcentaje dentro de la barra */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 5px;
+    font-size: 6px;
+    text-align: end;
+}
+
+.cb {
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+
+}
+
+.barra {
+    width: 60%;
+    color: rgb(255, 0, 0);
+    text-align: start;
+    font-weight: bold;
+
+}
+
+.progress-bar{
+    text-align: center;
+}
+
+
+
+#projects{
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.contproj {
+    width: 70%;
+    justify-content: center ;
+
+}
+
+.recientes {
+    width: 40%;
+}
+
+.recientes div img{
+    width: 150px;
+    height: 150px;
+}
+
+#contacto{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 50px; 
+
+}
+
+footer {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+}
