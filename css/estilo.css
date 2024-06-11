@@ -2,13 +2,24 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-family: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
 }
+
 
 header {
     background-color: #000;
     text-align: end;
     align-items: center;
+    padding: 40px;
+    width: 80%;
+
+}
+
+.bloque {
+    display: none;
 }
 
 .headerbutton {
@@ -18,7 +29,7 @@ header {
     border: none;          /* Sin borde */
     border-radius: 5%;
     padding: 10px 20px;    /* Espaciado interno */
-    font-size: 16px;       /* Tamaño del texto */
+    font-size: 18px;       /* Tamaño del texto */
     cursor: pointer;       /* Cursor en forma de mano */
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
@@ -51,10 +62,8 @@ span {
 }
 
 .presentacion {
-    width: 30%;
-    position: relative;
-    left: 35vh;
-    top: 12vh;
+    width: 50%;
+    padding: 5% 0% 0% 15%;
 
 }
 
@@ -76,14 +85,14 @@ span {
 
 .mifoto {
     position: relative;
-    right: 20vh;
+    right: 10vh;
     top: 12vh;
 }
 
 .mifoto img {
     display: flex;
-    width: 450px;
-    height: 300px;
+    width: 550px;
+    height: 330px;
     flex-direction: column;
 } 
 
@@ -110,7 +119,7 @@ span {
 }
 
 .banner{
-    width: 60%;
+    width: 75%;
     height: 20vh;
     background-color: white;
     display: flex;
@@ -162,6 +171,7 @@ span {
     display: flex;
     color: white;
     background-color: rgb(255, 0, 0);
+    background: url(../img/fondo.jpg);
     text-align: start;
     padding: 50px 150px;
 }
@@ -206,7 +216,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    padding: 50px;
 }
 
 #skills h2 {
@@ -289,12 +299,13 @@ span {
 
 .contproj {
     width: 70%;
-    justify-content: center ;
+    display: flex;
 
 }
 
 .recientes {
     width: 40%;
+    align-items: start;
 }
 
 .recientes div img{
@@ -305,19 +316,343 @@ span {
 #contacto{
     background-color: black;
     color: white;
-    text-align: center;
-    padding: 10px 50px; 
+    display: flex;
+    justify-content: center;
+    text-align: center; 
     padding: 50px;
 
+}
+
+#contacto h2 {
+    margin: 0px 0px 40px 0px;
+}
+
+input {
+    margin: 0px 10px;
 }
 
 footer {
     background-color: rgb(255, 0, 0);
     color: white;
     text-align: center;
+    padding-top: 5px;
     background-image: url('img/elBanner.jpg');
     width: 100%;
-    height: 100px; 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;}
+    height: 200px; 
+    background: url(../img/fondo.jpg);
+}
+    
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+    h1{
+        font-size: 20px;
+    }
+    h2 {
+    font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .bloque {
+        color: white;
+        display: block;
+    }
+
+    .mifoto {
+        display: none;
+    }
+
+    .presentacion {
+        width: 100%;
+        display: flex;
+        flex-direction: columm;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+
+    .banner {
+        width: 90%;
+        margin: 0%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .der {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 120px;
+        
+    }
+    
+
+    .fotoservicios {
+        display: none;
+    }
+
+
+    .cb {
+        margin: 0%;
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .contproj {
+        width: 95%;
+        position: relative;
+        right: 10px;
+    }
+
+    .recientes {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (teléfonos medianos) */
+@media (max-width: 480px) {
+    h1{
+        font-size: 20px;
+    }
+    h2 {
+    font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .bloque {
+        color: white;
+        display: block;
+    }
+
+    .mifoto {
+        display: none;
+    }
+
+    .presentacion {
+        width: 100%;
+        display: flex;
+        flex-direction: columm;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+
+    .banner {
+        width: 90%;
+        margin: 0%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .der {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 120px;
+        
+    }
+    
+
+    .fotoservicios {
+        display: none;
+    }
+
+
+    .cb {
+        margin: 0%;
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .contproj {
+        width: 95%;
+        position: relative;
+        right: 10px;
+    }
+
+    .recientes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas) */
+@media (max-width: 768px) {
+
+    h1{
+        font-size: 20px;
+        width: 100%;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .bloque {
+        color: white;
+        display: block;
+    
+    }
+
+    .mifoto {
+        display: none;
+    }
+
+    .presentacion {
+        width: 100%;
+        display: flex;
+        flex-direction: columm;
+        flex-wrap: wrap;
+        margin: 5px;
+        flex-grow: 1;
+    }
+
+    .banner {
+        width: 90%;
+        margin: 0%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .der {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 120px;
+        
+    }
+    
+
+    .fotoservicios {
+        display: none;
+    }
+
+
+    .cb {
+        margin: 0%;
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .contproj {
+        width: 95%;
+        position: relative;
+        right: 10px;
+    }
+
+    input {
+        width: 100%;
+        margin: 4px;
+    }
+
+    .recientes {
+        display: flex;
+        flex-direction: column;
+    } 
+
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1024px (pantallas pequeñas y tabletas en modo horizontal) */
+@media (max-width: 1024px) {
+     
+    .presentacion {
+        width: 70vh;
+        position: relative;
+        left: 50px;
+        top: 20px   ;
+    }
+
+    .fotoservicios {
+        width: 40vh;
+        
+    }
+
+    .der {
+        margin: 0%;
+        width: 60vh;
+        
+    }
+
+    .cb {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        margin: 4px;
+    }
+
+    .recientes {
+        display: flex;
+        flex-direction: column;
+    } 
+
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1280px (laptops y pantallas medianas) */
+@media (max-width: 1280px) {
+    
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1440px (pantallas grandes) */
+@media (max-width: 1440px) {
+    
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1920px (pantallas muy grandes) */
+@media (max-width: 1920px) {
+    
+   
+}

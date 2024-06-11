@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stileto.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Mi Página</title>
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/5" alt="logo">
-        <nav>
+        <nav class="navbar">
             <a class="headerbutton" href="#hero">home</a>
             <a class="headerbutton" href="#servicios">servicios</a>
             <a class="headerbutton" href="#skills">habilidades</a>
             <a class="headerbutton" href="#contacto">contacto</a>
             <a class="headerbutton" href="#projects">proyectos</a>
-            <!-- <a class="headerbutton" href="">sign up</a> -->
+            <i class="bi bi-list bloque"></i>
         </nav>
     </header>
 
@@ -28,11 +27,11 @@
                     <h2>Desarrollador <span>FULLSTACK</span></h2>
                     <p>Bienvenido a mi portafolio en línea. Soy un desarrollador web apasionado, recién entrando al mundo laboral con un fuerte deseo de aprender y crecer en la industria.</p>
                     <button class="herob">DESCARGAR CV</button>
-                    <button class="herob">SUSCRBIR</button>
+                    <button class="herob">SUSCRIBIR</button>
                 </section>
     
                 <section class="mifoto">
-                    <img src="img/hero.png" alt="Gonzalo Munafo">
+                    <img src="img/hero2.png" alt="Gonzalo Munafo">
                 </section>
 
             </section>
@@ -65,7 +64,7 @@
         </section>
 
         <section id="servicios">
-            <section class="fotoservicios"><img src="img/Servicios.png" alt="Gonzalo Munafo"></section>
+            <section class="fotoservicios"><img src="img/servicios.png" alt="Gonzalo Munafo"></section>
               
             <section class="der"> 
                 <h2>MI INTRO</h2>
@@ -129,18 +128,17 @@
 
 
         </section>
-                                                 -->
+
+
+
         <section id="contacto">
             <form action="#" method="post">
                 <h2>Contacto</h2>
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" placeholder="Nombre"   name="name" required>
+    
+                <input type="email" id="email" placeholder="Correo Electrónico"    name="email" required>
                 
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <input id="message" name="message"  placeholder="Mensaje"   rows="1" required></textarea>
                 
                 <button type="submit">Enviar</button>
             </form> 
@@ -178,12 +176,12 @@
             <section class="contenedor contproj">
                 <div class="contenedor recientes">
                     <div>
-                        <img src="img/Project-libro.jpg" alt="">
+                        <img src="img/project-libro.jpg" alt="">
 
                     </div>
                     <div>
                         <h4><span>Sistema de Gestión Médicas</span></h4>
-                        <p>Diseñado para optimizar la administración de citas, historiales médicos, facturación y comunicación con pacientes.</p>
+                        <p>Diseñado para administración de citas, historiales médicos y comunicación con pacientes.</p>
                     </div>
                 </div>
                 
@@ -200,57 +198,8 @@
             </section>
         </section>
 
-         
-            <!--revisar porq era el calificaion nqv 
-            <h2>mi calificacion</h2>
-            <h1>INCREIBLE VIAJE</h1>
-            <h2>EDUCACION Y CERTIFICACION</h2>
-            <section class="contenedor">
-                <div><img src="https://via.placeholder.com/5" alt=""><h4></h4><h5></h5><img src="https://via.placeholder.com/5" alt=""><h6></h6></div>
-                <div><img src="https://via.placeholder.com/5" alt=""><h4></h4><h5></h5><img src="https://via.placeholder.com/5" alt=""><h6></h6></div>
-            </section>
-            <section class="contenedor">
-                <div><img src="https://via.placeholder.com/5" alt=""><h4></h4><h5></h5><img src="https://via.placeholder.com/5" alt=""><h6></h6></div>
-                <div><img src="https://via.placeholder.com/5" alt=""><h4></h4><h5></h5><img src="https://via.placeholder.com/5" alt=""><h6></h6></div>
-            </section>
-            <section class="contenedor">
-                <div><img src="https://via.placeholder.com/5" alt=""><h4></h4><h5></h5><img src="https://via.placeholder.com/5" alt=""><h6></h6></div>
-                <div><img src="https://via.placeholder.com/5" alt=""><h4></h4><h5></h5><img src="https://via.placeholder.com/5" alt=""><h6></h6></div>
-            </section>
-            -->
-            
-        
-
-        <!--  
-        <section class="portfolio">   
-            <h1 class="textorojo">PORTAFOLIO</h1>
-            <h2 class="textonegro">Mi trabajo reciente</h2>
-            <section class="galeria">
-                <div class="izq">
-                    <img src="" alt="">
-                    <h4 class="textorojo"></h4>
-                    <p class="textonegro start"></p>
-                    <img src="" alt="">
-                    <h4 class="textorojo"></h4>
-                    <p class="textonegro"></p>
-                </div>
-
-                <div class="der">
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h4 class="textorojo"></h4>
-                    <p class="textonegro start"></p>
-                    <img src="https://via.placeholder.com/150" alt="">
-                    <h4 class="textorojo"></h4>
-                    <p class="textonegro"></p>
-
-                </div>
-            </section>
-            
-        </section>
-  -->
-
     </main>
     
-    <footer><h4>CONTACT ME</h4><h2>SUSCRIBE NOW</h2>    </footer>
+    <footer><h4>CONTACT ME</h4><h2>SUSCRIBETE AHORA</h2>    </footer>
 </body>
 </html>
