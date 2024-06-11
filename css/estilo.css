@@ -351,16 +351,14 @@ footer {
 
 @media (max-width: 320px) {
     h1{
-        font-size: 20px;
-    }
-    h2 {
-    font-size: 18px;
-    }
-    p {
         font-size: 16px;
     }
-
-
+    h2 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+    }
 
     .navbar {
         display: flex;
@@ -382,11 +380,12 @@ footer {
     }
 
     .presentacion {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: columm;
         flex-wrap: wrap;
         margin: 5px;
+        
     }
 
     .banner {
@@ -435,13 +434,13 @@ footer {
 /* Estilos para dispositivos con un ancho máximo de 480px (teléfonos medianos) */
 @media (max-width: 480px) {
     h1{
-        font-size: 20px;
+        font-size: 18px;
     }
     h2 {
-    font-size: 18px;
+    font-size: 16px;
     }
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .navbar {
@@ -457,6 +456,7 @@ footer {
     .bloque {
         color: white;
         display: block;
+        
     }
 
     .mifoto {
@@ -470,6 +470,7 @@ footer {
         flex-wrap: wrap;
         margin: 5px;
     }
+
 
     .banner {
         width: 90%;
@@ -547,6 +548,12 @@ footer {
         display: none;
     }
 
+    .hero1 {
+        position: relative;
+        right: 100px;
+        bottom: 50px;
+    }
+
     .presentacion {
         width: 100%;
         display: flex;
@@ -562,6 +569,8 @@ footer {
         height: 40%;
         display: flex;
         flex-direction: column;
+        position: relative;
+        right: 30px;
     }
 
     .der {
